@@ -31,8 +31,6 @@ for line1,line2 in zip(lines[::2],lines[1::2]):
 		data3 = data - data2
 		ltcdata =  '\n' + ltcaddr + '\n' + "{:,}".format(data3) + ' LTC\n'
 		text.insert(INSERT, ltcdata)	
-		text.tag_add(ltcdata, "1.0", "1.4")
-		text.tag_config(ltcdata, background="yellow")
 		
 	if line1.strip() == 'DOGE':
 		dogeaddr = line2.strip()
